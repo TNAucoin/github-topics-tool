@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  github-topics:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    image: github-topics:latest
+    volumes:
+      - ..:/workspace
+    environment:
+      - GITHUB_TOKEN=${GITHUB_TOKEN}
+    working_dir: /workspace

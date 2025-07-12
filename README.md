@@ -127,6 +127,22 @@ settings:
   dry_run: false          # Test mode
 ```
 
+### Sample `repos.txt` file
+
+```
+# List of repositories, one per line
+# Lines starting with # are ignored
+owner/repo1
+owner/repo2
+different-org/special-repo
+myorg/project-alpha
+myorg/project-beta
+```
+
+Use with: `./scripts/github-topics.sh --repos-file repos.txt --topics python automation`
+
+**Note**: By default, topics are added to existing repository topics. Use `--replace` to replace all existing topics instead.
+
 ## Usage Examples
 
 ### Using Config File

@@ -12,7 +12,7 @@ class GitHubTopicsManager:
 		self.session = requests.Session()
 		self.session.headers.update(
 			{
-				"Authorization": f"token {token}",
+				"Authorization": f"bearer {token}",
 				"Accept": "application/vnd.github.mercy-preview+json",
 				"User-Agent": "GitHub-Topics-Manager",
 			}

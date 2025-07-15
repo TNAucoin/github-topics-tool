@@ -1,0 +1,8 @@
+global_owner: WTS-Paradigm
+repositories:
+- repo: solutions-sample-repo
+global_topics:
+- team-solutions
+settings:
+  replace_existing: false
+  dry_run: false

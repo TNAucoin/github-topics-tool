@@ -222,6 +222,7 @@ echo "GITHUB_TOKEN=ghp_YourTokenHere" > .env
 - One of:
   - Docker (recommended)
   - Python 3.13+ with uv
+  - Make
 
 
 **Security Note**: GitHub tokens are never stored in config files - they must be set as environment variables or in a `.env` file (which is gitignored for security).
